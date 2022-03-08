@@ -1,4 +1,4 @@
-FROM openjdk:8
-EXPOSE 8080
+FROM openjdk:11
+EXPOSE 9080
 WORKDIR /src/java
-ENTRYPOINT ["JavaExample","-jar","/maven-dev.jar]
+ENTRYPOINT ["JavaExample","-jar","/maven-dev1.jar]
