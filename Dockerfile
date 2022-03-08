@@ -1,6 +1,5 @@
 FROM openjdk:11
-EXPOSE 9080
 COPY target/*.jar /
-WORKDIR /src/java
-ADD target/maven-dev1.jar maven-dev1.jar
-ENTRYPOINT ["java","-jar","/maven-dev1.jar"]
+EXPOSE 9080
+ADD target/docker-jenkins-sample.jar docker-jenkins-sample.jar
+ENTRYPOINT ["java","-jar","/docker-jenkins-sample.jar"]
